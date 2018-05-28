@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test work for React course</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+<body>
+    <main>
+        <form  method="POST" name="newForm">
+            <fieldset>
+                <legend>Simple test form</legend>
+                <label>First name*
+                    <input type="text" class="textInput" id="fname" name="fname" placeholder="Your name">
+                <div id="name_error" class="val_error"></div>
+                </label>
+                <label>Last name*
+                <input type="text" class="textInput" id="lname"  name="last-name" placeholder="Your last name">
+                <div id="last_name_error" class="val_error"></div>
+                </label>
+
+                <label>Birthday*
+                <input type="date" class="textInput" id="birthday" name="date" min="1940-04-01" max="2010-04-20">
+                <div id="birthday" class="val_error"></div>
+            </label>
+                
+            <div class="half-width">
+                    <label>Sex*
+                        <input type="radio" class="textInput" id="sex" name="gender" value="male" >Male</label>
+                    <label>
+                        <input type="radio" name="gender" value="female">Female</label>
+                        <div id="sex" class="val_error"></div>
+                    </div>
+                <div class="half-width">
+                    <label>Country*
+                    <select class="textInput" id="country" name="country" >
+                        <option value="ua">Ukraine</option>
+                        <option value="pl">Poland</option>
+                        <option value="gm">Germany</option>
+                    </select>
+                    <div id="country" class="val_error"></div>
+                </label>
+                </div>
+                <div class="half-width">
+                    <label>Email*
+                    <input type="email" class="textInput" id="email" name="email"></label>
+                    <div id="email" class="val_error"></div>
+                </div>
+                <div class="half-width">
+                    <label>Password*
+                    <input type="password" class="textInput" id="password" name="password"></label>
+                    <div id="password" class="val_error"></div>
+                </div>
+                <label>Address*
+                <input type="text" class="textInput" id="adress" name="address" placeholder="Write your address"></label>
+                <div id="address" class="val_error"></div>
+                <label>Notes
+                <textarea rows="3" cols="35"></textarea></label>
+                <div id="notes" class="notes_error"></div>
+            </fieldset>
+            <div>				
+            <button>Submit</button>
+                </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+        <form id="myform">
+                <div class="input">
+                            <label>Inp1
+                                <input type="text" name="inp1" id="inp1" class="field">
+                            </label>
+                            <div class="message"></div>
+                        </div>
+                            <button>Submit</button>
+                    </form>
+        <script>
+                var v = new Validator({
+                    id: 'myForm',
+                   methods: {
+                       'inp1': [
+                           ['notEmpty'], 
+                           ['contains', 'inp2'],
+                           ['pattern', 'email']
+                       ],
+                    } 
+                }) 
+        </script>
+                        
+</body>
+</html>
+-->
+
+
+
+
+
+       
